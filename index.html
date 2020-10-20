@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>An-tech</title>
+  </head>
+  <body>
+    <div id="preloader">
+        <i class="fas fa-redo-alt"></i>
+    </div>
+    <div class="" style="display: none;" id="mobile-menu">
+        <ul id="mobile-ul">
+            <li id="mobile-number">Tel. +666 00 00 001</li>
+            <li class="mobile-li open-glown menu-slide-toggle">Glown</li>
+            <li class="mobile-li open-ofirmie menu-slide-toggle">O firmie</li>
+            <li class="mobile-li open-oferta menu-slide-toggle">Oferta</li>
+            <li class="mobile-li open-kontakt menu-slide-toggle">Kontakt</li>
+            <li id="mobile-background" class="menu-slide-toggle">&nbsp;</li>
+        </ul>
+    </div>
+
+    <header>
+        <img id="logo" src="images/test-logo5.png" alt="">
+
+        <div id="header-menu">
+            <p class="hide-in-762">Tel. +666 00 00 001</p>
+            <img id="switch-languages-button" src="images/pl.png" alt="language" data-language=0 loading="lazy">
+            <img id="menu" class="menu-slide-toggle" src="images/menu.png" alt="" loading="lazy">
+        </div>
+    </header>
+
+    <div id="navigation-menu" class="hide-in-762">
+        <ul id="navigation-ul">
+            <li class="open-glown nav-active" id="nav-glown">Glown</li>
+            <li class="open-ofirmie" id="nav-ofirmie">O firmie</li>
+            <li class="open-oferta" id="nav-oferta">Oferta</li>
+            <li class="open-kontakt" id="nav-kontakt">Kontakt</li>
+        </ul>
+    </div>
+
+    <section id="mainSection" class="d-none">
+        <div id="main-description-row" class="row">
+            <div class="col-lg-6 col-12">
+                <p id="anim-description" class="invisible">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, maiores voluptates inventore, quia, 
+                    facilis sapiente eum vel reiciendis ea praesentium ex! Tenetur totam sit reiciendis amet optio tempora neque alias!
+                <hr class="invisible" id="description-hr" size="30">
+                </p>
+                <ul>
+                    <li><img class="description-point description-point-deactivated" src="images/check.png" loading="lazy" > Lorem ispum</li>
+                    <li><img class="description-point description-point-deactivated" src="images/check.png" loading="lazy" > Lorem ispum</li>
+                    <li><img class="description-point description-point-deactivated" src="images/check.png" loading="lazy" > Lorem ispum</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-6 col-12">
+                <img id="camera-img" class="camera-img-deactivated" src="images/camera1.png" alt="" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="aboutSection" class="d-none">
+        <div id="about-container" class="container">
+                <div class="col-12" style="text-align: center; padding-top: 100px;"><h1> - Our happy clients - </h1></div>
+                <img class="about-image" src="images/github.png" alt="" loading="lazy">
+                <img class="about-image" src="images/github.png" alt="" loading="lazy">
+                <img class="about-image" src="images/github.png" alt="" loading="lazy">
+        </div>
+        <div id="about-decor-row" class="row">
+            <div class="col-6"><img id="deco-left-img" class="img-decor" src="images/about-left.png" alt="" loading="lazy" ></div>
+            <div class="col-6"><img id="deco-right-img" class="img-decor" src="images/about-right.png" alt="" loading="lazy" ></div>
+        </div>
+    </section>
+
+    <section id="offerSection" class="">
+        <div class="row">
+            <div class="order-lg-1 order-2 col-lg-6 col-12"><img id="offer-image" src="images/camera3.png" alt="" loading="lazy"></div>
+            <div class="order-lg-2 order-1 col-lg-6 col-12 ">
+                <ul id="offer-list">
+                    <li class="offer-li">
+                        <img src="images/offer-1.png" class="li-before" loading="lazy" >&nbsp; Systemy Bezpieczeństwa
+                        <ul class="subcategory-ul">
+                            <li class="subcategory-li" data-key="monitoring" onclick="ShowSubCategory('monitoring');" style="padding-top: 10px;">Monitoring <i class="fas fa-angle-right"></i></li>
+                            <li class="subcategory-li" data-key="alarmy" onclick="ShowSubCategory('alarmy');">Alarmy <i class="fas fa-angle-right"></i></li>
+                            <li class="subcategory-li" data-key="instalacje" onclick="ShowSubCategory('instalacje');">Instalacje PPOŻ <i class="fas fa-angle-right"></i></li>
+                        </ul>
+                    
+                    </li>
+                    <li class="offer-li" id="ShowElektryczne" onclick="ShowSubCategory('elektryczne');"><img src="images/offer-2.png" class="li-before" loading="lazy">&nbsp; Instalacje elektryczne <i class="fas fa-angle-right"></i></li>
+                    <li class="offer-li">
+                        <img src="images/offer-3.png" class="li-before" loading="lazy">&nbsp; Automatyka Dostępu
+                        <ul class="subcategory-ul">
+                            <li class="subcategory-li" data-key="videofony" onclick="ShowSubCategory('videofony');" style="padding-top: 10px;">
+                                Videofony
+                                 <i class="fas fa-angle-right"></i></li>
+                            <li class="subcategory-li" data-key="kontrola" onclick="ShowSubCategory('kontrola');">Kontrola Dostępu <i class="fas fa-angle-right"></i></li>
+                            <li class="subcategory-li" data-key="rejestracja" onclick="ShowSubCategory('rejestracja');">Rejestracja Czasu Pracy <i class="fas fa-angle-right"></i></li>
+                            <li class="subcategory-li" data-key="systemy" onclick="ShowSubCategory('systemy');">Systemy Hotelowe <i class="fas fa-angle-right"></i></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactsSection" class="d-none">
+        <div class="row">
+            <div id="contacts" class="col-lg-6 col-12">
+                <h1>Zadwon</h1>
+                <p>Napiz we speak english</p>
+                <span>Tel. +666 00 00 001<br>Am-tech@gmail.com</span><br>
+                <span>Ponidzeiatek - pig tek, od 8:00 do 19:00</span>
+
+                <form action="">
+                    <div class="row">
+                        <div class="col-12 col-md-6"><input type="text" placeholder="imie"></div>
+                        <div class="col-12 col-md-6"><input type="text" placeholder="telefon"></div>
+                        <div class="col-12 col-md-6"><input type="text" placeholder="e-mail"></div>
+                        <div class="hide-in-762 col-12 col-md-6">&nbsp;</div>
+                        <div class="col-12 col-md-6"><input type="" placeholder="wikosome"></div>
+                        <div class="col-12 col-md-6"><input type="text"></div>
+                        <div class="col-12 col-md-12" id="checkBoxCol"><input type="checkbox"> zgoda politika</div>
+                        <div class="col-12 col-md-12"><button>Vidislat</button></div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6 col-12"><img id="camera-img-contacts" src="images/camera2.png" alt="camera" loading="lazy"></div>
+        </div>
+    </section>
+
+
+    <!-- subcategories -->
+
+    <section id="monitoring-section" class="subcategory-section">
+        <div class="row">
+            <div class="col-lg-8"><p id="monitoring-text">
+                Zależy Nam na Twoim i Naszym bezpieczeństwie, więc do instalacji kamer podchodzimy szczególnie poważnie...
+                <br>
+                Lata 2014 - 2018 to:
+                <ul style="list-style: square;">
+                    <li>ponad 4000 zainstalowanych przez Nas kamer</li>
+                    <li>ponad 100 lokalizacji</li>
+                    <li>setki zadowolonych klientów</li>
+                    <li>dziesiątki innowacyjnych rozwiązań</li>
+                </ul>
+            </p></div>
+            <div class="col-lg-4"><img style="max-width: 60%;" src="images/subcategories/monitoring.jpg" alt="camera" loading="lazy"></div>
+        </div>
+        
+    </section>
+
+    <section id="alarmy-section" class="subcategory-section">
+        <div class="row">
+            <div class="col-lg-12"><p id="monitoring-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor augue a turpis porttitor maximus. Nulla luctus elementum felis, sit amet condimentum lectus rutrum eget.
+            </p></div>
+            <div class="col-lg-12"><img style="max-width: 40%;" src="images/subcategories/alarmy.jpg" alt="camera" loading="lazy"></div>
+        </div>
+        
+    </section>
+
+    <section id="instalacje-section" class="subcategory-section">
+        <div class="row">
+            <div class="col-lg-12"><p id="monitoring-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor augue a turpis porttitor maximus. Nulla luctus elementum felis, sit amet condimentum lectus rutrum eget.
+            </p></div>
+            <div class="col-lg-12"><img style="max-width: 40%;" src="images/subcategories/instalacje.jpg" alt="camera" loading="lazy"></div>
+        </div>
+        
+    </section>
+
+
+
+    <section id="elektryczne-section" class="subcategory-section">
+        <div class="row">
+            <div class="col-lg-12"><p id="monitoring-text">
+                Zajmujemy się wykonywaniem nowych instalacji elektrycznych oraz modernizacją już istniejących instalacji, które znajdują się w Waszym:
+                <br>
+                <ul style="list-style: square;">
+                    <li>biurze</li>
+                    <li>domu</li>
+                    <li>bloku mieszkalnym</li>
+                </ul>
+            </p></div>
+            <div class="col-lg-12"><img style="max-width: 32%;" src="images/subcategories/elektryczne.jpg" alt="camera" loading="lazy"></div>
+        </div>
+        
+    </section>
+
+
+
+    <section id="videofony-section" class="subcategory-section">
+        <div class="row">
+            <div class="col-lg-12"><p id="monitoring-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor augue a turpis porttitor maximus. Nulla luctus elementum felis, sit amet condimentum lectus rutrum eget.
+            </p></div>
+            <div class="col-lg-12"><img style="max-width: 45%;" src="images/subcategories/videofony.gif" alt="camera" loading="lazy"></div>
+        </div>
+        
+    </section>
+
+    <section id="kontrola-section" class="subcategory-section">
+        <div class="row">
+            <div class="col-lg-12"><p id="monitoring-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor augue a turpis porttitor maximus. Nulla luctus elementum felis, sit amet condimentum lectus rutrum eget.
+            </p></div>
+            <div class="col-lg-12"><img style="max-width: 38%;" src="images/subcategories/kontrola.jpg" alt="camera" loading="lazy"></div>
+        </div>
+        
+    </section>
+
+    <section id="rejestracja-section" class="subcategory-section">
+        <div class="row">
+            <div class="col-12"><p id="monitoring-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor augue a turpis porttitor maximus. Nulla luctus elementum felis, sit amet condimentum lectus rutrum eget.
+            </p></div>
+            <div class="col-12"><img style="max-width: 46%;" src="images/subcategories/rejestracja.jpg" alt="camera" loading="lazy"></div>
+        </div>
+        
+    </section>
+
+    <section id="systemy-section" class="subcategory-section">
+        <div class="row">
+            <div class="col-12"><p id="monitoring-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor augue a turpis porttitor maximus. Nulla luctus elementum felis, sit amet condimentum lectus rutrum eget.
+            </p></div>
+            <div class="col-12"><img style="max-width: 40%;" src="images/subcategories/systemy.jpg" alt="camera" loading="lazy" ></div>
+        </div>
+        
+    </section>
+
+    <!--  -->
+
+    <footer>
+        <div class="row">
+            <div class="col-4">Am-tech</div>
+            <div class="col-8">All copyrights reserved</div>
+        </div>
+    </footer>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+
+    <script src="https://use.fontawesome.com/b6124efce3.js"></script>
+    <script src="js/dictionary.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
